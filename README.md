@@ -26,15 +26,6 @@ ft_isascii
 ft_isdigit
 ft_isprint
 ft_itoa
-ft_lstadd_back
-ft_lstadd_front
-ft_lstclear
-ft_lstdelone
-ft_lstiter
-ft_lstlast
-ft_lstmap
-ft_lstnew
-ft_lstsize
 ft_memchr
 ft_memcmp
 ft_memcpy
@@ -63,3 +54,14 @@ ft_strtrim
 ft_substr
 ft_tolower
 ft_toupper
+
+## list of bonus function
+ft_lstadd_back
+ft_lstadd_front
+ft_lstclear
+ft_lstdelone
+ft_lstiter
+ft_lstlast
+ft_lstmap
+ft_lstnew
+ft_lstsize
