@@ -1,5 +1,5 @@
 # libft
-##42 libft
+## 42 libft
 
 This is my first project at 42 school.
 
@@ -7,13 +7,13 @@ It includes many functions that will be used throughout the common core.
 
 The Makefile will generate object files in the objet/ folder, and a libft.a file in the main folder.
 
-##Makefile commands:
+## Makefile commands:
 - **make**: Compiles the project and generates libft.a.
 - **make clean**: Removes the objet/ folder.
 - **make fclean**: Removes the objet/ folder and the libft.a file.
 - **make re**: Cleans and recompiles the project (removes both the objet/ folder and libft.a before recompiling).
 
-##List of functions:
+## List of functions:
 ft_atoi
 ft_bzero
 ft_calloc
