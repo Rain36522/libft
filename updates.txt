@@ -1,0 +1,8 @@
+UPDATES!
+
+<================================   BEFOR  ================================>
+Add ft_strcmp!
+V1 ft_isint!
+
+<================================07.08.2024================================>
+Fix ft_isint (add possibility of number starting by many 0)
