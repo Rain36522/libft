@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pudry <pudry@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 08:43:39 by pudry             #+#    #+#             */
-/*   Updated: 2024/09/11 08:43:39 by pudry            ###   ########.ch       */
+/*   Created: 2024/09/11 21:41:13 by pudry             #+#    #+#             */
+/*   Updated: 2024/09/11 21:41:13 by pudry            ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list_lft **lst, t_list_lft *new)
 {
-	t_list	*ptr;
+	t_list_lft	*ptr;
 
 	if (new && !*lst)
 		*lst = new;

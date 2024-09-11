@@ -3,39 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pudry <pudry@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pudry <pudry@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 11:29:04 by pudry             #+#    #+#             */
-/*   Updated: 2023/10/19 08:55:12 by pudry            ###   ########.fr       */
+/*   Created: 2024/09/11 21:41:37 by pudry             #+#    #+#             */
+/*   Updated: 2024/09/11 21:41:37 by pudry            ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static t_list	*ft_lstcreate(t_list *lst, void *(*f)(void *))
+static t_list_lft	*ft_lstcreate(t_list_lft *lst, void *(*f)(void *))
 {
-	t_list	*ptr;
+	t_list_lft	*ptr;
 
-	ptr = (t_list *) malloc(sizeof(t_list));
+	ptr = (t_list_lft *) malloc(sizeof(t_list_lft));
 	if (!ptr)
 		return (NULL);
 	ptr->content = f(lst->content);
 	return (ptr);
 }
 
-static t_list	*ft_malloc_empty(t_list **lst, void (*del) (void *))
+static t_list_lft	*ft_malloc_empty(t_list_lft **lst, void (*del) (void *))
 {
 	if (lst)
 		ft_lstclear(lst, del);
 	return (NULL);
 }
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del) (void *))
+t_list_lft	*ft_lstmap(t_list_lft *lst, void *(*f)(void *), void (*del) (void *))
 {
-	t_list	*ptr;
-	t_list	*new_lst;
-	t_list	*old_lst;
-	t_list	*tmp;
+	t_list_lft	*ptr;
+	t_list_lft	*new_lst;
+	t_list_lft	*old_lst;
+	t_list_lft	*tmp;
 
 	if (!lst || !f || !del)
 		return (NULL);
@@ -69,7 +69,7 @@ void	*f(void *chr)
 	return (chr);
 }
 
-void	ft_print(t_list *ptr)
+void	ft_print(t_list_lft *ptr)
 {
 	int	i;
 
@@ -85,8 +85,8 @@ void	ft_print(t_list *ptr)
 int	main(void)
 {
 	int		i;
-	t_list	*ptr;
-	t_list	*lst;
+	t_list_lft	*ptr;
+	t_list_lft	*lst;
 	char	c[] = "a";
 
 	i = 0;

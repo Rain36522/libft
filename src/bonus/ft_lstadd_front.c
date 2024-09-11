@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pudry <pudry@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pudry <pudry@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 14:36:04 by pudry             #+#    #+#             */
-/*   Updated: 2023/10/12 15:15:16 by pudry            ###   ########.fr       */
+/*   Created: 2024/09/11 21:41:16 by pudry             #+#    #+#             */
+/*   Updated: 2024/09/11 21:41:16 by pudry            ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list_lft **lst, t_list_lft *new)
 {
 	new->next = *lst;
 	*lst = new;

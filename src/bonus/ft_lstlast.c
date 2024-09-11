@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pudry <pudry@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pudry <pudry@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 16:52:51 by paul              #+#    #+#             */
-/*   Updated: 2023/10/13 09:39:52 by pudry            ###   ########.fr       */
+/*   Created: 2024/09/11 21:41:48 by pudry             #+#    #+#             */
+/*   Updated: 2024/09/11 21:41:48 by pudry            ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+t_list_lft	*ft_lstlast(t_list_lft *lst)
 {
-	t_list	*ptr;
+	t_list_lft	*ptr;
 
 	ptr = lst;
 	while (ptr)
