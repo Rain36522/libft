@@ -12,6 +12,7 @@ The Makefile will generate object files in the objet/ folder, and a libft.a file
 - **make clean**: Removes the objet/ folder.
 - **make fclean**: Removes the objet/ folder and the libft.a file.
 - **make re**: Cleans and recompiles the project (removes both the objet/ folder and libft.a before recompiling).
+- **make bonus** Compiling the wall project with bonus
 
 ## List of functions:
 ft_atoi
