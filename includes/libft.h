@@ -73,7 +73,7 @@ t_list_lft		*ft_lstmap(t_list_lft *lst, void *(*f)(void *), \
 // added
 int				ft_isint(char *str);
 int				ft_strcmp(const char *str1, const char *str2);
-void            ft_exit(int icode, char *str);
+void            ft_exit_lft(int icode, char *str);
 char            *ft_strldup(const char *src, size_t n);
 char            **ft_split_multiple(char *str, char *str_c);
 

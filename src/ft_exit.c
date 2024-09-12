@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void    ft_exit(int icode, char *str)
+void    ft_exit_lft(int icode, char *str)
 {
     if (str && *str)
         write(2, str, ft_strlen(str));
